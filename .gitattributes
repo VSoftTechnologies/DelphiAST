@@ -25,3 +25,5 @@
 *.dpr eol=crlf
 *.dfm eol=crlf
 *.inc eol=crlf
+
+*.dspec filter=insert-hash
