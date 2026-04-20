@@ -33,7 +33,5 @@ templates:
     source:
       - src: ./LICENSE
       - src: ./Source/*.pas
-      - src: ./Source/*.pas
-      - src: ./Source/*.inc
       - src: ./Source/SimpleParser/*.pas
       - src: ./Source/SimpleParser/*.inc
