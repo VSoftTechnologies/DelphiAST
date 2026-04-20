@@ -1,0 +1,39 @@
+---
+#gnerated with dpmspec creator. comments will be lost when regenerated
+# DPM package manifest file
+
+min client version: 1.0
+packageKind: git;
+
+metadata:
+  id: VSoft.DelphiAST
+  version: 1.0.2
+  description: Abstract Syntax Tree Builder for Delphi - based on Stefan Glienke's fork on github
+  authors: [ Roman Yankovsky, Stefan Glienke ]
+  projectUrl: https://github.com/VSoftTechnologies/VSoft.YAML
+  repositoryUrl: https://github.com/VSoftTechnologies/VSoft.YAML
+  repositoryCommit: #HASH#
+  license: MPL-2.0
+  copyright: Roman Yankovsky and contributors
+  tags: [ AST, Parser, Lexer ]
+  readme: README.md
+
+# define variable defaults - can be overriden in targetPlatforms
+variables:
+  packageSource: Rad Studio $compilernoprefix$
+
+targetPlatforms:
+  # use ranges to simplify the file
+  - compiler from: delphixe2
+    compiler to: delphi13
+    platforms: [ win32, win64 ]
+
+templates:
+  - name: default
+    source:
+      - src: ./LICENSE
+      - src: ./Source/*.pas
+      - src: ./Source/*.pas
+      - src: ./Source/*.inc
+      - src: ./Source/SimpleParser/*.pas
+      - src: ./Source/SimpleParser/*.inc

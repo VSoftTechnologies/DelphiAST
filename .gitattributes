@@ -27,3 +27,6 @@
 *.inc eol=crlf
 
 *.dspec filter=insert-hash
+*.dspec.yaml filter=insert-hash
+
+
