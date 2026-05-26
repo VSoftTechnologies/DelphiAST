@@ -24,7 +24,7 @@ variables:
 targetPlatforms:
   # use ranges to simplify the file
   - compiler from: delphixe2
-    compiler to: delphi13
+    compiler to: delphi13.0
     platforms: [ win32, win64 ]
 
 templates:
